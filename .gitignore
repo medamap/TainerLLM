@@ -1,0 +1,24 @@
+# コンパイル・ビルド結果
+*.o
+*.so
+*.bin
+*.out
+
+# Docker関連
+docker-compose.override.yml
+Dockerfile.old
+.dockerignore
+docker-volume/
+
+# ボリュームマウントフォルダ（モデルデータは除外）
+ollama/
+!ollama/README.md  # ただし、フォルダの説明ファイルは含める
+
+# 一時ファイル
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Git関係
+.git/
